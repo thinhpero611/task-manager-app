@@ -4,7 +4,7 @@ import { TagsFilled, DeleteOutlined, HighlightOutlined } from '@ant-design/icons
 import { useDispatch } from 'react-redux';
 import { deleteTask, updateTask, updateTaskMission } from '../../modules/task/repository';
 
-const { Text, Link, Title, Paragraph } = Typography
+const { Text, Title, Paragraph } = Typography
 const Task = ({ task }) => {
   const [ isChecked, setIsChecked ] = useState(task.isComplete)
   const [ editText, setEditText ] = useState(task.taskMission)
