@@ -8,7 +8,7 @@ import { Divider, Layout, Badge } from 'antd'
 import 'antd/dist/antd.css'
 import Title from 'antd/lib/typography/Title';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 const initialState = {
   taskMission: "",
@@ -21,7 +21,6 @@ const  App = () => {
 
   useEffect(() => {
     dispatch(getList())
-    console.log("after dispatch", tasks)
   }, [dispatch])
 
   const handleChange = (e) => {
